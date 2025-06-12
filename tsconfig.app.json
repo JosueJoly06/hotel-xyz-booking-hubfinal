@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    // Output target and module support
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    // Required for React 17+ JSX transform
+    "jsx": "react-jsx",
+
+    // Enables accurate behavior of class fields
+    "useDefineForClassFields": true,
+
+    // Skip type checking of declaration files
+    "skipLibCheck": true,
+
+    // Bundler-specific configuration (e.g., Vite or Next.js)
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true, // Prevent output, assuming a bundler handles it
+
+    // Linting - relaxed for dev speed, can tighten later
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": false,
+
+    // Path aliases
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+
+  // Files to include in the project
+  "include": ["src"]
+}
